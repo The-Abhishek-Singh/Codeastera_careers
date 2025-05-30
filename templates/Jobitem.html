@@ -1,0 +1,30 @@
+<div class="col-9 d-flex justify-content-start align-items border-bottom border-2 mb-5 ">
+  <div class="d-flex flex-column justify-content-start align-items-start ">
+  <h4>
+  {{job['Title']}}
+     </h4>
+
+<div>
+    {{job['Location']}}
+
+   </div>
+{% if "Salary" in job %}      
+<div>
+  {{job['Salary']}}
+ </div>
+     {% endif %}
+
+<p class="text-start mb-5 mt-2 text-wrap">
+  {{job['Job Description']}}
+
+ </p>
+
+
+     </div>
+
+   </div>
+
+<div class="col-3">
+
+ <button type="button" class="btn btn-outline-warning my-5">Apply</button>
+</div>
